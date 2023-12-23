@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Ale Imnsert Code
+Plugin Name: Ale Insert Code
 Description: Плагин для добавления произвольного кода в тему WordPress
 Version: 1.0.0
 Author: Toropov Aleksandr
@@ -26,3 +26,11 @@ function ale_deactivation() {
    // действия при деактивации плагина
 }
 
+add_action( 'wp_body_open', 'ale_insert_body_start' );
+
+/**
+ * Добавление кода после тега body
+ */
+function ale_insert_body_start() {
+   
+}
