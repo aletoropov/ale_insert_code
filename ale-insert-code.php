@@ -14,7 +14,7 @@ register_activation_hook( __FILE__, 'ale_install' );
 function ale_install() {
    // проверяем совместимость с версией WordPress
    if ( !is_wp_version_compatible( '5.2' )) {
-      wp_die( 'This plugin reqires WordPress 5.2 or higter.' );
+      wp_die( __( 'This plugin reqires WordPress 5.2 or higter.', 'plugin_aic') );
    }
 }
 
