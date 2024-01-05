@@ -7,6 +7,10 @@ Author: Toropov Aleksandr
 Author URI: https://aletoropov.ru/
  */
 
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
+}
+
 /**
  * Действия при активации плагина
  */

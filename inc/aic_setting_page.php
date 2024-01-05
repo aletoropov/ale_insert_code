@@ -3,6 +3,10 @@
  * Файл страницы параметров плагина
  */
 
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
+}
+
 //Регистрируем страницу настроек плагина в админ-панели
 function aic_register_options_page() {
     add_menu_page('Ale Insert Code', 'Ale Insert Code', 'manage_options', 'aic_plugin', 'aic_setting_page', 'dashicons-format-chat');
