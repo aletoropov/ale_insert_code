@@ -1,6 +1,8 @@
 <?php 
 /**
  * Файл страницы параметров плагина
+ * 
+ * @author Alexandr Toropov <toropovsite@yandex.ru>
  */
 
 if (!defined('ABSPATH')) {
