@@ -11,6 +11,8 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
+require __DIR__ . '/inc/plugin-options.php';
+
 /**
  * Действия при активации плагина
  */
