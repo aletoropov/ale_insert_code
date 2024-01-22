@@ -38,8 +38,8 @@ add_action( 'wp_head', 'aic_insert_head' );
  * Добавление кода в head
  */
 function aic_insert_head() {
-   $code = get_option('aic_head_code');
-   echo $code;
+   $code = get_option('aic_plugin_options');
+   echo $code['aic_head_code'];
 }
 
 add_action( 'wp_footer', 'aic_insert_footer' );
@@ -48,8 +48,8 @@ add_action( 'wp_footer', 'aic_insert_footer' );
  * Добавление кода в footer
  */
 function aic_insert_footer() {
-   $code = get_option('aic_footer_code');
-   echo $code;
+   $code = get_option('aic_plugin_options');
+   echo $code['aic_footer_code'];
 }
 
 add_action( 'wp_body_open', 'ale_insert_body_start' );
@@ -58,6 +58,6 @@ add_action( 'wp_body_open', 'ale_insert_body_start' );
  * Добавление кода после тега body
  */
 function ale_insert_body_start() {
-   $code = get_option('aic_body_code');
-   echo $code;
+   $code = get_option('aic_plugin_options');
+   echo $code['aic_body_code'];
 }
