@@ -50,7 +50,7 @@ function aic_plugin_section1_func() {
  */
 function aic_insert_body_func() {
     $options = get_option('aic_plugin_options');
-    echo "<div><label>Code in BODY<div><textarea id='aic_body_code' name='aic_plugin_options[aic_body_code]'>{$options['aic_body_code']}</textarea></label></div></div>";
+    echo "<div><label>Code in BODY<div><textarea id='aic_body_code' rows='10' style='width:100%;' name='aic_plugin_options[aic_body_code]'>{$options['aic_body_code']}</textarea></label></div></div>";
 } 
 
 /**
@@ -58,7 +58,7 @@ function aic_insert_body_func() {
  */
 function aic_insert_head_func() {
     $options = get_option('aic_plugin_options');
-    echo "<div><label>Code in HEAD<div><textarea id='aic_head_code' name='aic_plugin_options[aic_head_code]'>{$options['aic_head_code']}</textarea></label></div></div>";
+    echo "<div><label>Code in HEAD<div><textarea id='aic_head_code' rows='10' style='width:100%;' name='aic_plugin_options[aic_head_code]'>{$options['aic_head_code']}</textarea></label></div></div>";
 }
 
 /**
@@ -66,7 +66,7 @@ function aic_insert_head_func() {
  */
 function aic_insert_footer_func() {
     $options = get_option('aic_plugin_options');
-    echo "<div><label>Code in FOOTER<div><textarea id='aic_footer_code' name='aic_plugin_options[aic_footer_code]'>{$options['aic_footer_code']}</textarea></label></div></div>";
+    echo "<div><label>Code in FOOTER<div><textarea id='aic_footer_code' rows='10' style='width:100%;' name='aic_plugin_options[aic_footer_code]'>{$options['aic_footer_code']}</textarea></label></div></div>";
 }
 
 /**
@@ -74,5 +74,5 @@ function aic_insert_footer_func() {
  */
 function aic_insert_admin_func() {
     $options = get_option('aic_plugin_options');
-    echo "<div><label>Code in ADMIN PANEL<div><textarea id='aic_admin_code' name='aic_plugin_options[aic_admin_code]'>{$options['aic_admin_code']}</textarea></label><div></div>";
+    echo "<div><label>Code in ADMIN PANEL<div><textarea id='aic_admin_code' rows='10' style='width:100%;' name='aic_plugin_options[aic_admin_code]'>{$options['aic_admin_code']}</textarea></label><div></div>";
 }
