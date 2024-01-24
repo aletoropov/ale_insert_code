@@ -3,6 +3,7 @@
  * Файл страницы параметров плагина
  * 
  * @author Alexandr Toropov <toropovsite@yandex.ru>
+ * @package WordPress 
  */
 
 if (!defined('ABSPATH')) {
