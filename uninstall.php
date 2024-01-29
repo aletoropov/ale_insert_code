@@ -11,7 +11,4 @@ if (!defined( 'WP_UNINSTALL_PLUGIN')) {
     die;
 }
 
-delete_option('aic_body_code');
-delete_option('aic_head_code');
-delete_option('aic_footer_code');
-delete_option('aic_admin_code');
+delete_option('aic_plugin_options');
