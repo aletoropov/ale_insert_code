@@ -7,7 +7,7 @@ Author: Toropov Aleksandr
 Author URI: https://aletoropov.ru/
  */
 
-if (!defined('ABSPATH')) {
+if ( !defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
 
@@ -45,7 +45,7 @@ add_action( 'wp_head', 'aic_insert_head' );
  * Добавление кода в footer
  */
 function aic_insert_footer() {
-   $code = get_option('aic_plugin_options');
+   $code = get_option( 'aic_plugin_options' );
    echo $code['aic_footer_code'];
 }
 add_action( 'wp_footer', 'aic_insert_footer' );
@@ -54,7 +54,7 @@ add_action( 'wp_footer', 'aic_insert_footer' );
  * Добавление кода после тега body
  */
 function ale_insert_body_start() {
-   $code = get_option('aic_plugin_options');
+   $code = get_option( 'aic_plugin_options' );
    echo $code['aic_body_code'];
 }
 add_action( 'wp_body_open', 'ale_insert_body_start' );
